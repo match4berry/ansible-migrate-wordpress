@@ -17,14 +17,14 @@
   become: true
   copy:
     src: "{{ migrate_db_import_path }}"
-    dest: /tmp/sorsa.sql
+    dest: /tmp/{sql}
     owner: root
     group: root
-    mode: 0600
+    mode: 0700
 
 - name: Import database
   become: true
   mysql_db:
       name: "{{ migrate_db_name }}"
       state: import
-      target: /tmp/sorsa.sql
+      target: /tmp/{sql}
