@@ -28,7 +28,7 @@
     dest: /tmp/migrate_wp.tar
     owner: root
     group: root
-    mode: 0600
+    mode: 0700
 
 - name: Extract WordPress
   unarchive:
