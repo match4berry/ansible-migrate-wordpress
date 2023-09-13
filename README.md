@@ -35,3 +35,4 @@ It will take care of following things:
 ### 4. Credits
 https://github.com/tucsonlabs/ansible-playbook-wordpress-nginx
 https://github.com/mikegleasonjr/ansible-role-firewall
+https://github.com/RakField/ansible-migrate-wordpress
