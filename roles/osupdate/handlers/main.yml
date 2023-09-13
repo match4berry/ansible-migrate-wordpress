@@ -1,5 +1,5 @@
 ---
-# handlers file for osupdate
+# handlers file for osupdate (debian)
 - name: Install debian-goodies to be able to see if a reboot is required
   apt:
     update_cache: yes
