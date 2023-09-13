@@ -1,16 +1,16 @@
-# Ansible playbook for building up tuukkamerilainen.com
+# Ansible playbook for building up Wordpress Site
 
 ### Requirements
-- Ansible 2.0.0 or newer running on Ubuntu 14.04 (might work with newer Ubuntu as well)
-- Ubuntu 16.04 server configured so that you can say "ssh insertserverhost"
-- tuukkamerilainen.com wordpress site as tar (make sure that when extracting the tar, it extracts all files not one folder which contains files)[this should work with any preinstalled wordpress site]
-- mysqldump of tuukkamerilainen.com (existing) wordpress installation as .sql
+- Ansible 2.9 or newer running on Ubuntu 20.04 (might work with newer Ubuntu as well)
+- Ubuntu 20.04 server configured so that you can use ssh
+- any wordpress site as tar (make sure that when extracting the tar, it extracts all files not one folder which contains files)[this should work with any preinstalled wordpress site]
+- mysqldump of wordpress site (existing) wordpress installation as .sql
 
 ### 1. What is this
-This playbook can be used with tuukkamerilainen.com (any pre installed) wordpress sites. I use this when I need to migrate my personal website to another server.
+This playbook can be used with any pre installed wordpress sites. This repository could be used when we need to migrate personal website to another server.
 
 ### 2. What this does
-This playbook makes it easy to build up tuukkamerilainen.com in Ubuntu 16.04 server.
+This playbook makes it easy to build up site in Ubuntu 20.04 server.
 
 It will take care of following things:
 
@@ -19,10 +19,9 @@ It will take care of following things:
  - Install / Harden Firewall with iptables
  - Install NGINX
  - Install MySQL
- - Migrate tuukkamerilainen.com wordpress
- - Migrate tuukkamerilainen.com database
- -> Everything should work as is working at tuukkamerilainen.com
-
+ - Migrate wordpress site
+ - Migrate database site
+ 
 ### 3. Running
 
  - Specify hostname of your server into hosts file
